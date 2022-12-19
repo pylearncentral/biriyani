@@ -62,7 +62,18 @@ def update_grade_totalmarks(s):
     print(d)
 
 def assign_grade(m):
-    print(m)
+    t = 0
+    for i, j in m.items():
+        t = t+j
+    print("total marks: ", t)
+    if t >= 200:
+        print("A grade")
+    elif 100 <= t < 200:
+        print("B Grade")
+    elif t < 100:
+        print("C grade")
 
 
-
+# greater than or equal 200, A rade
+# greater than or equal 100 and less than 200, B grade
+# less than 100, C grade
